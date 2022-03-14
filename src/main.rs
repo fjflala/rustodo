@@ -92,8 +92,8 @@ impl Component for Model {
     };
 
     html! {
-      <div class="bg-gray-100 h-screen w-screen flex items-center justify-center">
-        <div class="w-2/5">
+      <div class="bg-gray-100 h-screen w-screen flex md:items-center justify-center">
+        <div class="w-full lg:w-2/5 p-4">
           <div class="w-full bg-white rounded-md p-4 drop-shadow-sm">
             <h1 class="text-xl mb-4 font-semibold uppercase text-gray-600">{"Rustodo"}</h1>
             <div class="-mx-4 py-2 px-4 border-b-2 border-b-gray-100 text-xs text-gray-400 uppercase font-medium flex items-end">
@@ -110,12 +110,14 @@ impl Component for Model {
           </div>
           <div class="text-center mt-2 text-gray-400 text-xs">
             <p>
-              {"Made with ♥ by Francisco"} 
+              {"Made with ♥ by Fran"} 
             </p>
-            <p class="flex justify-center">
-              <a target="_blank" href="" class="mr-2">{"Repository"}</a>
-              <a target="_blank" href="https://yew.rs/" class="mr-2">{"Yew"}</a>
-              <a target="_blank" href="https://tailwindcss.com/">{"Tailwind"}</a>
+            <p class="flex justify-center items-center">
+              <a target="_blank" href="https://github.com/fjflala/rustodo" class="mr-2 hover:underline">{"Repository"}</a>
+              <span class="mr-2 text-2xl leading-none	font-bold relative -top-px">{"·"}</span>
+              <a target="_blank" href="https://yew.rs/" class="mr-2 hover:underline">{"Yew"}</a>
+              <span class="mr-2 text-2xl leading-none	font-bold relative -top-px">{"·"}</span>
+              <a target="_blank" href="https://tailwindcss.com/" class="hover:underline">{"Tailwind"}</a>
             </p>
           </div>
         </div>

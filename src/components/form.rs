@@ -35,7 +35,7 @@ pub fn button(props: &FormProps) -> Html {
 
   html! {
     <form {onsubmit}>
-      <Input class="mb-2" label="Content" value={(*value).clone()} {on_input} />
+      <Input id="content" class="mb-2" label="Content" value={(*value).clone()} {on_input} />
       <Button disabled={is_disabled}>{"Add todo"}</Button>
     </form>    
   }
